@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anotaçoes do Ex023-Tabelas</title>
+
+    <link rel="stylesheet" href="estilo-anotaçoes.css">
+
 </head>
 <body>
     <h1>Anotaçoes</h1>
@@ -17,8 +20,114 @@
     
    </ol>
 
-   
+   <h1>o codigo fica assim</h1>
+
+   <pre>
+       <p> 
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;A1&lt;/td&gt;
+                &lt;td&gt;B1&lt;/td&gt;
+                &lt;td&gt;C1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;A2&lt;/td&gt;
+                &lt;td&gt;B2&lt;/td&gt;
+                &lt;td&gt;C2&lt;/td&gt;
+            &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td&gt;A3&lt;/td&gt;
+                &lt;td&gt;B3&lt;/td&gt;
+                &lt;td&gt;C3&lt;/td&gt;
+            &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td&gt;A4&lt;/td&gt;
+                &lt;td&gt;B4&lt;/td&gt;
+                &lt;td&gt;C4&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table>
+    </p>
+   </pre>
+   <hr>
     
+   <p>o gg explicou algumas coisas</p>
+   
+   <h2>bordas da tabela</h2>
+   <p>quando a gente coloca esse codigo fica somente com os dados, sem bordar</p>
+    assim:
+
+    <pre>
+        <table>
+         <tr>
+                <td >A1</td>
+                <td >B1</td>
+                <td >C1</td>
+            </tr>
+            <tr>
+                <td >A2</td>
+                <td >B2</td>
+                <td >C2</td>
+            </tr>
+             <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+             <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+    </pre>
+
+    <p>pata que as bordas apaeçam precisamos colocar bordas nos dados e na table</p>
+    <p>assim:</p>
+
+    <pre>
+        <table id="ex">
+         <tr>
+                <td class="extd">A1</td>
+                <td class="extd">B1</td>
+                <td class="extd">C1</td>
+            </tr>
+            <tr>
+                <td class="extd">A2</td>
+                <td class="extd">B2</td>
+                <td class="extd">C2</td>
+            </tr>
+             <tr>
+                <td class="extd">A3</td>
+                <td class="extd">B3</td>
+                <td class="extd">C3</td>
+            </tr>
+             <tr>
+                <td class="extd">A4</td>
+                <td class="extd">B4</td>
+                <td class="extd">C4</td>
+            </tr>
+        </table>
+    </pre>
+    
+    <p>porem assim ele fica estheticamente feio</p>
+    <P>pra que ele n fique feio, a gente vai aidiconar uma nova tag:</P>
+    <p>no table a gente coloca a propiedade "border-collapse: collapse;"</p>
+    <p>ai podemos mexer na altura,largura,padding, alinhamento de texto como quiser</p>
+    <h3>falando em alinhamento</h3>
+    <p> o gg ensinou o "vertical-aling"</p>
+    <p>que alinha verticalmente as celulas</p>
+<hr>
+
+
+
+
+
+
+
+
+
+
+   <h2>em algum ou alguns dados a gente adicina uma classe</h2>
 
 
 

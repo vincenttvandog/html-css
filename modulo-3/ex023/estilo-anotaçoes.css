@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-color: bisque;
+    
+}
+
+#ex{
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+
+.extd{
+    border: 1px solid black ;
+} ;
