@@ -3,7 +3,7 @@
 table{
     border: 1px solid black
     ;
-    width: 600px;
+    width: 400px;
     height: 900px;
     border-collapse: collapse;
 }
@@ -30,7 +30,11 @@ th{
 }
 
 td{
-    border: 1px solid black
+    border: 1px solid black;
+}
+.num{
+    text-align: right;
+    padding: 10px;
 }
 
 tfoot{
