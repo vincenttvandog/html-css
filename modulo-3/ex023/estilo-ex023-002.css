@@ -6,6 +6,7 @@ table{
     width: 400px;
     height: 900px;
     border-collapse: collapse;
+    position: relative;
 }
 
 caption{
@@ -15,9 +16,15 @@ caption{
    color: white
 
 }
+thead > tr > th{ 
+    position: sticky;
+    top:-1px;
+}
 
-tr{
-border: 1px solid black
+tr:nth-child(2n){
+border: 1px solid black;
+background-color: rgba(164, 227, 250, 0.318);
+
 
 }
 th{
