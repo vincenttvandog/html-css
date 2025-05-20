@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+table{
+    border: 1px solid black
+    ;
+    width: 600px;
+    height: 900px;
+    border-collapse: collapse;
+}
+
+tr{
+border: 1px solid black
+
+}
+th{
+   border: 1px solid black;
+   height: 40px;
+   background-color: gainsboro;
+   color: rgb(2, 2, 27);
+       
+    
+}
+
+td{
+    border: 1px solid black
+}
+
+tfoot{
+     background-color: gainsboro;
+   color: rgb(2, 2, 27);
+}
