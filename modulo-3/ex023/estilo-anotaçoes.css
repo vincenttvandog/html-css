@@ -4,6 +4,13 @@ body{
     background-color: bisque;
     
 }
+p{
+    line-height: 1.5em;
+}
+p#mc{
+    width: 500px;
+    
+}
 
 #ex{
     border: 1px solid black ;
@@ -12,4 +19,6 @@ body{
 
 .extd{
     border: 1px solid black ;
-} ;
+}
+
+
