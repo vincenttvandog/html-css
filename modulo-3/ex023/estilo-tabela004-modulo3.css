@@ -1,8 +1,39 @@
 @charset "UTF-8";
 
+body{
+    background-color: rgba(0, 174, 255, 0.112);
+
+}
+
+
 
 table{
     border: 1px solid black;
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+thead{
+    background-color: purple;
+    color: plum;
+}
+
+tbody > tr:nth-child(2n-1){
+    border: 1px solid black;
+    
+    padding: 5px;
+    background-color: rgb(255, 255, 255)
+}
+
+tr:nth-child(2n){
+    border: 1px solid black;
+    
+    padding: 5px;
+    background-color: rgba(221, 160, 221, 0.218)
 }
 
 th{
@@ -10,3 +41,13 @@ th{
     padding: 5px;
     margin-left: 10px;
 }
+
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+    
+   
+}
+
+
