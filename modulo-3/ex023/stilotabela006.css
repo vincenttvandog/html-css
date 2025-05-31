@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+
+table{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: 30px;
+}
+caption{
+    font-size: 1.5em;
+    padding: px;
+}
+th{
+    text-align: center;
+    padding: 5px;
+    padding-left: 8px;
+    border: 2px solid black;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+,td{
+    text-align: center;
+    padding: 5px;
+    padding-left: 8px;
+    border: 2px solid black;
+    font-size: 1.2em;
+}
+.cNome,.cidade{
+    background-color: bisque;
+}
+.cgenero,.cAtuação{
+    background-color: rgba(0, 255, 170, 0.204);
+}
