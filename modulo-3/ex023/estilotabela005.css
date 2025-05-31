@@ -19,6 +19,9 @@ th,td{
     border: 2px solid black;
     font-size: 1.2em;
 }
-.cNome{
+.cNome,.cidade{
     background-color: bisque;
+}
+.cgenero,.cAtuação{
+    background-color: rgba(0, 255, 170, 0.204);
 }
