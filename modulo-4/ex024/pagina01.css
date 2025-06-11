@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+table{
+    border: 1px solid black
+    ;
+    width: 400px;
+    height: 900px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+caption{
+    font-size: 1.8em;
+    border: 1px solid black;
+    background-color: rgb(67, 67, 67);
+   color: white
+
+}
+thead > tr > th{ 
+    position: sticky;
+    top:-1px;
+}
+
+tr:nth-child(2n){
+border: 1px solid black;
+background-color: rgba(164, 227, 250, 0.318);
+
+
+}
+th{
+   border: 1px solid black;
+   height: 40px;
+   background-color: gainsboro;
+   color: rgb(2, 2, 27);
+       
+    
+}
+
+td{
+    border: 1px solid black;
+    
+}
+.num{
+    text-align: right;
+    padding: 10px;
+}
+
+tfoot{
+     background-color: gainsboro;
+   color: rgb(2, 2, 27);
+}

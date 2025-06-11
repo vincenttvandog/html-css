@@ -7,6 +7,11 @@
     <style>
         body{
             background-color: bisque;
+            
+        }
+        p,pre{
+            font-size: 1.2em;
+            
         }
 
 
@@ -58,6 +63,23 @@
  <hr>
 
  <h1> iframe com conteudo local</h1>
+    <p>para colocarmos um iframe com uma pasta logal basta colocamos o nome da pasta no lugar do src  </p>
 
+    <p>se quisermos centralizar o iframe, temos que configura-lo como block, pq ele é inline, e dps colocar o "margin auto"</p>
+     <p>ex</p>
+
+     <pre>
+         &lt;style&gt;
+            body{
+                background-color: bisque;
+            }
+            iframe{
+                height: 300px ;
+                width: 420px ;
+                display: block;
+                margin: auto;
+            }
+             &lt;/style&gt;
+     </pre>
 </body>
 </html>
