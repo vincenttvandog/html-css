@@ -86,12 +86,58 @@
              &lt;/style&gt;
      </pre>
 
+     <hr>
+
      <h2>Navegando no iframe</h2>
 
      <p>a gente fez isso aqui </p>
 
      <iframe src="ex024/iframe003.html"></iframe>
 
-     a gente
+     <hr>
+
+     <p>fizemos isso configurando o iframe e dps no codigo html de cada link que colocamos </p>
+     <p>no iframe colocamos a tag "name" e lhe damos  um nome</p>
+     <pre>
+        &ltiframe src="pagifextra/pag1Extra.html" name="tenna"&gt&lt/iframe&gt
+     </pre>
+     <p>, nos links colocamos um target, direccionado ao nome que demos ao iframe, fazedo assim o conteudo do link abrir dento do iframe</p>
+
+     <pre>
+        &ltli&gt &lta href="https://www.cursoemvideo.com" target="tenna"&gtPrimeira pagina&lt/a&gt&lt/li&gt
+
+     </pre>
+
+
+     
+         <h3>ficando assim o codigo</h3>
+         <pre>
+          &lt;h1&gt;Faça uma escolha&lt/h1&gt;
+         
+             &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea exercitationem officiis voluptatem adipisci, aliquid id, dolor voluptatum sunt dolore autem eaque. Deleniti repellendus impedit quidem provident ratione minus vel laudantium. lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi tempore at. Beatae deleniti mollitia quaerat doloremque dolorem ullam labore asperiores, temporibus eligendi. Facere inventore nesciunt neque repudiandae, dolorum nemo!&lt;/p&gt;
+         
+             &lt;ul&gt;
+            &lt;li> &lt;ta href="https://www.cursoemvideo.com" target="tenna&gt;Primeira pagina&lt/a&gt;&lt;/li&gt;
+            &lt;li>&lt;ta href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro" target="tenna&gt;segunda pagina&lt;/a>&lt;/li&gt;
+            &lt;li>&lt;ta href="https://www.wikipedia.com"target="tenna" &gt;Terceira Pagina &lt;/a>&lt;/li&gt;
+         
+         
+             &lt;/ul&gt;
+         
+         
+         
+           &lt;p&gt;
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eos consectetur cum hic? Doloremque aspernatur voluptate praesentium, quod omnis veritatis architecto esse animi voluptatem molestiae sed fugiat ducimus magni quae!
+             &lt;/p&gt;
+         
+             &lt;iframe src="pagifextra/pag1Extra.html" name="tenna"&gt;
+             Infelizmente seu navagador, não suporta o formato de iframe acesse &lt;a href="#">ao conteudo&lt;/a&gt;
+             &lt;/iframe&gt;
+         
+             &lt;p&gt;
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ut, illum quam amet at aperiam soluta tenetur est accusamus ea error excepturi praesentium, et quo vel debitis laborum perferendis placeat?
+            &lt;/p&gt;
+     </pre>
+
 </body>
 </html>
