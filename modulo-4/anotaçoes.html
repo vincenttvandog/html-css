@@ -9,14 +9,18 @@
             background-color: bisque;
             
         }
+        p{
+            padding-left: 10px;
+        }
+
         p,pre{
             font-size: 1.2em;
             
         }
         iframe{
             background-color: white;
-            height: 40vw;
-            width: 90vw;;
+            height: 20vw;
+            width: 50vw;;
         }
 
     </style>
@@ -148,5 +152,48 @@ escrever pds ...
 
 <p>tem jeitos de vc impedir que o seu iframe seja uma janela para uma invasão no seu site ou um ataque</p>
 <p>é importante tomar preocalçoes no seu site</p>
+
+<strong>
+    <p>para fazer isso vamos usar uma tag simples, sandbox="sandbox" referrerpolicy="no-referrer"</p>
+</strong>
+<p>essa configuração é a proteção mais forte que tem, ela vai bloquear toda ação que capture informaçoes no seu site</p>
+
+
+<p>porem ele consequentemente, limita algumas funçoes as vezes necessarias no seu site e se  voce precisar que ele tenha algumas, por exemplo, esse formulario que usamos de exemplo no exercicio</p>
+ <hr>
+<iframe src="ex024/pagifextra/pag004.html" ></iframe>
+<hr>
+
+<p>pra que ele funcione, como ele ta no mesmo servidor que o meu, podemos colocar allow-same-origin" </p>
+
+<p>podemos colocar "allow-forms" que pemite formularios</p>
+
+<p>allow-scripts" permite scriptis</p>
+
+ficando assim o codigo: 
+
+<pre>
+    &lt;iframe src="pagifextra/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer" &gt;
+        Seu navegador n é compativel com o imframe,infelizmente 
+    &lt;/iframe&gt;
+</pre>
+
+    <p>neste codigo eu to permetindo que no iframe, ele permita, que servidores da mesma origem tenham acesso e n sejam barrados, que formularios n sejam barrados e que scripts n sejam barrados </p>
+
+    <h3>vou te dar outro exemplo</h3>
+    <hr>
+
+    <iframe src="ex024/pagifextra/pag005.html"></iframe>
+
+    <hr>
+    <p>pra que esse iframe que tem um script, quando clicamos ele cria a um paragrafo com "voce clicou" </p>
+    <p>esse scirpt é inocente, e tbm pe do nosso propio servidor mas muitos sites podem ter um script nocivo, que vai te deixar de xereca</p> 
+    <p>para barrar um script usamos </p>
+    <p>sandbox="sandbox" referrerpolicy="no-referrer"</p>
+    <p>se voce quiser liberar os scirpt basta colocar "allow-scripts"</p>
+
+    <h1>não coloque qualquer site no iframe do seu site "n abra a porta da sua casa pra qualquer um </h1>
+
+
 </body>
 </html>
