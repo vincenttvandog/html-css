@@ -25,6 +25,7 @@
         }
         iframe#proj-redes{
                 height: 500px;
+                width: 1000px;
 
         }
 
@@ -200,10 +201,34 @@ ficando assim o codigo:
     <h1>não coloque qualquer site no iframe do seu site "n abra a porta da sua casa pra qualquer um </h1>
 
     <hr>
+
+    <p>o codigo é esse: </p>
+
+    <pre>
+        &lt;style&gt;
+            body{
+                background-color: rgb(171, 62, 35);
+            }
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;a href="#" onclick="clicou ()">clique em mim&lt;/a&gt;
+        &lt;div id="saida"&gt;&lt;/div&gt;
+        &lt;script&gt;
+            function clicou (){
+                s = window.document.getElementById("saida")
+                s.innerHTML += '&lt;p&gt; Você clicou &lt;/p>&gt;
+                }
+        &lt;/script&gt;
+        
+        &lt;/body>
+    </pre>
+
+    <hr>
     <h2>projeto das midias</h2>
     <p>fizemos um projeto que se resumiu em iframes, e no background, centralizamos a imagem no centro e adaptamos o um iframe simulando a tela de um celular, esses iframes contiam, index com um link pra uma rede social especifica e o background era prints do perfil do gg nessas redes, e no fim do iframe, um botão com o link num target blank</p>
     <br>
-    <iframe src="../../../../Projetos.do.CursoemVideo/Projetos.do.CursoemVideo/Projetos/desafio13-modulo4/index.html" frameborder="0" id="proj-redes" ></iframe>
+    <iframe src="../../../../Projetos.do.CursoemVideo/Projetos.do.CursoemVideo/Projetos/desafio13-modulo4/index.html" frameborder="0" id="proj-redes"></iframe>
     <br>
     <hr>
     <h2>Formularios</h2>
@@ -218,6 +243,121 @@ ficando assim o codigo:
 
     <iframe src="pag-ex/pag01.html" frameborder="0"></iframe>
 
+    <p>pra criar a caixa de texto nós usamos a tag <strong>input text</strong>, onde temos o <strong>name</strong> e o <strong>id </strong></p>
+    
+    <p>para que as infromaçoes que estamos pedindo sejam coletadas, nós enviamos ela para alguma linguagem de programação, nós colocamos a tag "<strong>action</strong>", ação a ação é enviar aquele formularios para o local que vc escolher, será enviado quando clicarmos no botão de submit</p>
+
+    &downarrow;
+
+     para fazer o botão nós colocamos um <strong>input submit</strong>
+    no "value" a gente adiona oq queremos que esteja escrito
+
+    <p>no name a gente coloca no nome, o nome é voce que escolhe, o name e o id são como identificadores</p>
+
+   <h3>Label</h3>
+<p>o label é a forma do navegador que a caixa de texto do nome é do nome e que na caixa do lado do sobrenome é para adicionarr o sobrenome </p>
+
+<strong>
+    <p>o codigo é assim:</p>
+</strong>
+
+<pre>
+    &lt;form action="cadastro.php" autocomplete="off"&gt;
+            &lt;p&gt;&lt;label for="iNome"> Nome:&lt;/label&gt;
+                &lt;input type="text" name="Nome" id="iNome"&gt;&lt;/p&gt;
+    
+            &lt;p>&lt;label for="iSobrenome">Sobrenome:&lt;/label&gt;
+                &lt;input type="text" name="Sobrenome" id="iSobrenome"&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/p&gt;
+    
+        &lt;/form&gt;
+</pre>
+
+<h2>GET & POST</h2>
+
+<p>Se olharmos a URL ali em cima, podemos ver as infromaçoes que demos no nosso cadastro ali em cima</p>
+
+<pre>"file:///C:/Users/maria/Documents/CursoEmVideo/html-css/modulo-4/ex025/cadastro.php<strong><u>?Nome=Henrique&Sobrenome=Garcias"</u></strong></pre>
+
+<p>isso é um padrão da linguagem html porem, é algo antietico pq quando for alguma informação importante como senha, cpf ou cep, suas informçoes estão expostas ali MAS para resolver isso é simples</p>
+
+<p>nós adicionamos a tag "method" e colamos em <strong>post</strong></p>
+
+<p>o padrão dele é "get" ent se vc quiser mostras essas infos na url, o method é <strong>GET</strong></p>
+
+<p>adicionando o post as informaçoes somem </p> <p>isso não protege suas informaçoes, somente esconde suas infos da url, porem se voce ir em inspecionar e ir em network, e ir no arquivo do cadastro php e em headers, suas inforrmaçoes ficam lá, então basta um conhecimento basico do navegador que suas informaçoes podem ser achadas, ent o POST não protege suas informaçoes.</p>
+
+<p>para proteger seus dados, nós usamos a linguagem https que ai fi, ficamo de xereca</p>
+
+s<img src="Captura de tela 2025-06-21 193706.png" alt="">
+
+<h3>Quando usamos GET e POST</h3>
+
+<p>quando n for um dado sensivel, dados sensiveis, são</p>
+
+<ul>
+    <li>senhas</li>
+    <li>CPF</li>
+    <li>CEP</li>
+    <li>Email</li>
+
+</ul>
+
+<p>ai usamos o GET, caso contrario usamos o POST</p>
+
+<p>não podemos usar o get se os dados tiverem mais de 3 mil bits que seriam 3 mil caracteres em comparação</p>
+<p>ai precisamos usa o post,
+se formos envia arquivos tbm precisamos usar o post</p>
+
+<hr>
+
+<h2>Criando Controles Especiais para Formulrios</h2>
+<p>o GG n vai mostrar TODOS os controles porem ele n vai ddeixar nos faltar nada de essencial</p>
+
+
+    <h2>aprendemos os type </h2>
+    <ul>
+        <li>password</li>
+        <p>  &lt;input type="password"</p>
+        <p>"é o type referente as senhas"</p>
+
+        <li>reset</li>
+        <p>&lt;input type="reset"</p>
+        <p>"da o botão que reseta os caracteres"</p></p>
+
+        <li>number</li> 
+
+        <p>#</p>
+
+        <li>date</li>
+
+            <p>#</p>
+
+        <li>month</li>
+
+        <p>#</p>
+
+        <li>time</li>
+
+        <p>#</p>
+
+
+    </ul>
+
+        <h2>tags</h2>
+    <ul>
+        <li>required</li>
+        <p> "é a tag que deixa aquele campo obrigatorio de ser preenchido"</p>
+        <li>minlength</li>
+        <p>"dita o minimo de caracteres"</p>
+        <li>maxlength</li>
+        <p>"dita o maximo de caracteres"</p>
+        <li>size</li>
+        <p>"Dita o tanto de caracteres que vai caber naa caixa, ditando assim o tamanho"</p>
+        <li>placeholder</li>
+        <p> "deixa um recado dentro do campo de preenchimento"</p>
+
+    </ul>
 
 
 </body>

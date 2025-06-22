@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Meu terceiro formulario</h1>
+
+    <br>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+       
+        <label for="inome">Nome</label>
+    <input type="text" name="Nome" id="inome" required minlength="5" maxlength="20" placeholder="Nome completo" >
+
+    
+
+    <p>
+        <label for="inota">Nota do Aluno:</label>
+        <input type="number" name="nota" id="inota" required min="0" max="10" step="0.1" placeholder="0 a 10">
+       
+    </p>
+
+    <p>
+        <label for="iano">Ano Letivo</label>
+        <input type="month" name="Ano Letivo" id="iano"
+        value="2025-06">
+    </p>
+
+    <p>
+        <label for="">Data da Avaliação</label>
+        <input type="date" name="data" id="idata">
+
+    </p>
+
+    <p><label for="ih">Hora</label>
+    <input type="time" name="Hora" id="ih">
+    
+    </p>
+
+
+    <p id="botoes"><input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </p>
+
+    <br>
+    
+    <hr>
+
+        
+
+
+    </form>
+    
+
+
+    
+</body>
+</html> 
