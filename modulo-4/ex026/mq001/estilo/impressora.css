@@ -1,1 +1,36 @@
 @charset "UTF-8";
+
+*{
+margin: 10px;
+padding-left: 10px;
+
+}
+
+h1#Am{
+    color:rgb(226, 186, 90)
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height:1.5em;
+
+}
+
+menu{
+    display: none;
+
+}
+
+article::after{
+    content: "Esse Artigo foi Impresso pela existencia de uma pessoa" ;
+}
+
+
+header{
+    background-color: rgb(255, 252, 234);
+
+}
+
+body{
+      background-color:  rgb(255, 252, 234); ;}

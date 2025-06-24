@@ -2,15 +2,34 @@
 
 
 *{
+margin: 0px;
+padding-left: 0px;
 
+}
+
+body{
+      background-color:  rgba(165, 149, 130, 0.500); ;
 
 }
 
 h1#Am{
-    color:rgb(226, 186, 90)
+    color:rgb(226, 186, 90);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-body{
-
+html{
+    font-family: sans-serif;
 
 }
+
+header{
+    background-color: rgba(165, 149, 130, 0.355);
+
+}
+
+menu li{
+    display: inline-block;
+
+}
+
+
