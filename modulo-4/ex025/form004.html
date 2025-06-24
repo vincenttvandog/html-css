@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaio</title>
+</head>
+<body>
+    <h1>Meu Quarto Formulario</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.php" method="get">
+            <p><label for="inome">Nome</label>
+            <input type="text" name="Nome" id="inome">
+        
+        
+            </p>
+            <p>
+                <label for="imail">Email</label>
+                <input type="email" name="mail" id="imail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="Telefone" id="itel" required pattern= "^
+                            \(\d{2}\)\d{4,5}-\d{4}
+                            $" placeholder="(xx)xxxxx-xxxx"> 
+            </p>
+        </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    
+
+    
+</body>
+</html>
