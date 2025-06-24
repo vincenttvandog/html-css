@@ -7,11 +7,30 @@
 </head>
 <body>
     <h1>Meu Sexto Formulario</h1>
-    <form action="" method="get">
+    <form action="cadastro.php" method="post">
 
         <p>
-            <label for=""></label>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#ffffff">
+        </p>
+
+        <p>
+            <label for="inl">Nivel de Satisfação:</label>
+            <input type="range" name="Nivel" id="inl" min="0"
+            max="5" value="5">
+        </p>
+
+        <p>
+            <label for="if">Foto de Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+
+        <p>
+            
             <input type="submit" value="Enviar">
+            
+            <input type="reset" value="Limpar">
         </p>
 
 
