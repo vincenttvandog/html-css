@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,51 @@
 </head>
 <body>
     <h1>Meu Setimo Formulario</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
 
-        
-        
-        
-        
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estao" id="iest">
+
+                <optgroup label="Rgião Sudest">
+                <option value="RJ">Rio de Janeiro</option>
+
+                <option value="SP">São Paulo</option>
+
+                <option value="MG">Minas Gerais</option>
+
+                <option value="ES">Espirito Santo</option>
+                </optgroup>
+                
+                <optgroup label="Região Sul">
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+                
+
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup> </p>
+            </select>
+
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof" placeholder="nós diga sua Profissão">
+                    <datalist id="lstprof">
+                        <option value="Adiministrador"></option>
+                        <option value="Professor"></option>
+                        <option value="Programador"></option>
+                        <option value="Metalurgico"></option>
+                        <option value="Dona/o de Casa"></option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="imsg">Mensagem</label>
+                    <textarea name="msg" id="imsg" cols="40" rows="10" placeholder="escreva aqui"></textarea>
+                </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
@@ -20,5 +59,7 @@
 
 
     </form>
+</body>
+</html>
 
         
