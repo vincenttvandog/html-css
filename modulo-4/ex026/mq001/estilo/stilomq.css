@@ -23,12 +23,26 @@ html{
 }
 
 header{
-    background-color: rgba(165, 149, 130, 0.355);
+    background-color:  rgba(165, 149, 130, 0.33) ;
+    text-align: center;
 
 }
 
+menu ul{
+ background-color:rgba(165, 149, 130, 0.556)  ;
+
+}
 menu li{
     display: inline-block;
+    padding: 10px;
+    background-color:rgba(165, 149, 130, 0.556)  ;
+
+}
+
+article{
+text-align: center;
+ padding: 10px;
+ line-height: 1.5em;
 
 }
 
