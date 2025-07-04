@@ -7,17 +7,17 @@
 }
 
 html,body{
-    width: 150vw;
-    height: 150vh;
-    background-color: rgb(255, 201, 25);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(35, 62, 255);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 @media screen and (orientation: portrait) {
     body{
-    background-color: rgb(255, 27, 15);
     background-image: url(imagens/cev-portrait.jpg);
+    background-position:  center bottom;
 
 }
 }
@@ -25,7 +25,7 @@ html,body{
 @media screen and (orientation: landscape) {
     html,body{
     background-image: url(imagens/cev-landscape.jpg) ;
-    background-position:  ;
+    background-position: left bottom ;
     
 }
 }
