@@ -455,7 +455,7 @@ se formos envia arquivos tbm precisamos usar o post</p>
 <p>Nesses exercicio nós utilizamos algumaa pogramaçoes de JavaScript
     "os oninput"
 </p>
-
+<hr>
 
 <h2>Formato para impressoes</h2>
 
@@ -463,8 +463,121 @@ se formos envia arquivos tbm precisamos usar o post</p>
 
  <a href="../ex026/mq001/index.html">fizemos isso no no primeiro exercicio desse cap,</a>
 
+ <h3>cod.index</h3>
+
+ <pre>
+    <p>
+        &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Media query&lt;/title&gt;
+    &lt;link rel="stylesheet" href="estilo/stilomq.css" media="screen"&gt;
+    &lt;link rel="stylesheet" href="estilo/impressora.css" media="print"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 id="Am"&gt;Olá Mundo%lt;/h1&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Noticias%lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;menu&gt;
+        &lt;ul&gt;
+            &lt;li&gt;politica%lt;/li&gt;
+            &lt;li&gt;boas novas%lt;/li&gt;
+            &lt;li&gt;Oque acontece pelo mundo%lt;/li&gt;
+            &lt;li&gt;Meu Brasil%lt;/li&gt;
+            
+        &lt;/ul&gt;
+
+
+    &lt;/menu&gt;
+
+    &lt;nav&gt;
+
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;br&gt;
+            &lt;h2&gt;Estou Aprendedo Midia queries Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore sunt porro quaerat nostrum, ipsa, quo, sapiente ex harum libero totam nesciunt ratione. Totam impedit, fugit voluptas et quos voluptate! lorem&lt;/h2&gt;
+
+            &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati vel iste sint, corrupti labore, nihil quos voluptates quia minus harum laudantium esse accusantium. Quisquam numquam modi dolorum eaque repellendus facere!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus id natus illo vero, amet quod dolores iste error mollitia eligendi facilis nam cumque accusantium, quisquam aspernatur consectetur molestias ad non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla doloremque maiores dolore ut non quae qui optio itaque? Quas voluptatum et illum pariatur. Non soluta reprehenderit ullam similique laborum.&lt;/p&gt;
+
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae alias nam ullam blanditiis, excepturi autem. Odit minima voluptate non nemo doloremque aliquid, ex officiis reprehenderit ad animi esse! Exercitationem, et.&lt;/p&gt;
+
+            &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolores atque necessitatibus eum, doloremque modi labore dolorum! Voluptate eveniet, non maxime maiores reiciendis, molestiae modi vel minima, optio iure consequatur!&lt;/p&gt;
+
+
+
+
+        &lt;/article&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+
+    &lt;/footer&gt;
+
+    </p>
+ </pre>
+<hr>
+ <h3>cod.css impressora</h3>
+        <pre>
+            <p>
+                @charset "UTF-8";
+
+*{
+margin: 10px;
+padding-left: 10px;
+
+}
+
+h1#Am{
+    color:rgb(226, 186, 90)
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height:1.5em;
+
+}
+
+menu{
+    display: none;
+
+}
+
+  header{
+    background-color: rgb(255, 252, 234);
+    text-align: center;
+
+}
+
+article{
+text-align: center;
+ padding: 10px;
+ line-height: 1.5em;}
+
+
+
+body{
+      background-color:  rgb(255, 252, 234); ;}
+
+
+
+      article::after{
+    content: "Esse Artigo foi Impresso pela existencia de uma pessoa" ;
+}
+            </p>
+    </pre>
+
+
+
+
  <hr>
   <pre>
+
       &lt;link rel="stylesheet" href="estilo/stilomq.css" media="screen"&gt;
         &lt;link rel="stylesheet" href="estilo/impressora.css" media="print"&gt;
   </pre>
@@ -504,6 +617,7 @@ se formos envia arquivos tbm precisamos usar o post</p>
 
 <p>e configuramos as imagens na css simplesmente, adaptando ao viwerport do dispositivo, que no caso usamos 100 de largura e altura, e colocamos o background da cor da imagem, cabo</p>
 
+<p>o codig fico assim:</p>
 <hr>
 <pre>
     <p>
