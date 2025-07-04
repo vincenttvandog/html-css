@@ -14,7 +14,7 @@
         }
 
         p,pre{
-            font-size: 1.2em;
+            font-size: 1.1em;
             
         }
         iframe{
@@ -490,10 +490,57 @@ se formos envia arquivos tbm precisamos usar o post</p>
 <hr>
 <pre>
     <p>
-    &lt;link rel="stylesheet" href="stilo/paisagem.css" media="screen and (orientation: landscapr)"&gt;</p>
+    &lt;link rel="stylesheet" href="stilo/paisagem.css" media="screen and (orientation: landscape)"&gt;</p>
 </pre>
 <hr>
+<p><strong>"midia: tela, orientação paisagem"</strong></p>
 
+
+<hr>
+
+<p>retrato no cod a gente coloca em inglês portrait, mesma coisa pra paisagem landscape</p>
+
+<p>a gente separou elas por css e por orientação na primeira pratica</p>
+
+<p>e configuramos as imagens na css simplesmente, adaptando ao viwerport do dispositivo, que no caso usamos 100 de largura e altura, e colocamos o background da cor da imagem, cabo</p>
+
+<hr>
+<pre>
+    <p>
+        @charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(35, 62, 255);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (orientation: portrait) {
+    body{
+    background-image: url(imagens/cev-portrait.jpg);
+    background-position:  center bottom;
+
+}
+}
+
+@media screen and (orientation: landscape) {
+    html,body{
+    background-image: url(imagens/cev-landscape.jpg) ;
+    background-position: left bottom ;
+    
+}
+}
+    </p>
+</pre>
+<hr>
 
 
 </body>
