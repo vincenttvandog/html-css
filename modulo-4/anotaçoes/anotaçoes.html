@@ -687,17 +687,18 @@ Large desktop devices (1025px and up), including desktop monitors and larger lap
        <br><br>
         <p>e colocamos a largura do vw do dispostivo que queremos no caso ali tem o pc </p> 
         <p> por fim fazemos nossa css</p>
-        <p>{
-        span#burguer{
-            display:none
-        }
+        <pre>
+            <p>{
+            span#burguer{
+                display:none
+            }
+            menu{
+            display: block;
+                }
+            }</p>
+        </pre>
 
-        menu{
-        display: block;
-    }
-}</p>
-
-<p>ali diz no span com id burguer p display é none e no menu  o dispay é block oq esconde o icon d hamburguer e deix obsoleto o JvScript que colocamos nele e mostra o menu bonitinho</p>
+<p>ali diz no span com id burguer que display é none e no menu o dispay é block oq esconde o icon de hamburguer e deixa obsoleto o JvScript que colocamos nele e mostra o menu bonitinho</p>
 
 <iframe src="../ex026/mq005/index.html" frameborder="0"></iframe>
 
@@ -708,22 +709,92 @@ Large desktop devices (1025px and up), including desktop monitors and larger lap
 <img src="Captura de tela 2025-07-06 223235.png">
 
 
-
-
-
 <hr>
 
 <h2>ainda tamo lidando com Media features e isso nós leva a um conceito de Mobile first </h2>
 <h3>que é criar primeiro a versão mobile das coisas</h3>
 
-<p> por isso o GG ta nós ensinando o menu Hamburguer que é compacto e muito se nçao o mais utilizado para dispositivos mobile</p>
-<p>######</p>
+<p> por isso o GG ta nós ensinando o menu Hamburguer que é compacto e muito utilizado se nao o mais utilizado para dispositivos mobile</p>
+<p>bom antigamente os dev criavam o site para pc e adaptavma para os celulares dps como etavamos fazendo noo curso mas nesse exercicio e nós proximos nós vamos crir primeiro o mobile d dps a versão para pc , tablets, tv e etc</p>
 
-<p>nós vamos pegar o icon o menu n google tal quanl as fonts d google</p>
+<p>como exemplo de mobile o gg pegou  menu burguer pq todo site mobile o menu ele fica encolhido e quando vc clica ele abre se não atrapalha a navegaçaõ do usuario</p>
 
+<p>bom nós iremos criar o css geral que no caso é o do mobile</p>
+<p>dps da configuração nós vamos criar outro pros outros dispositivos</p> 
 
+ent criando o nosso link css: 
 
-<h3>Vamos lidar com jvScrip quando formos fazer o menu de alburguer o cod é esse:</h3>
+<pre><p>&lt;link rel="stylesheet" href="style.css"&gt;</p></pre>
+
+<p> nós configuramos como queremos</p> 
+<p>e bom para pegar o menu d hamburguer</p>
+
+<p>nós vamos pegar o icon o menu n google tal qual as fonts do google</p>
+
+<a href="https://fonts.google.com/icons">este aqui</a>
+
+<p>e vamos pegar a url do simbolo</p>
+
+                    <pre><p>
+                        &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /&gt;
+                    </p></pre>
+
+<p>adicionamos ele no nosso head e dps o css dele e vamos colocar no nosso html, no caso acima do menu</p>
+
+<p>
+    "&lt;span class="material-symbols-outlined"&gt;
+    menu
+    &lt;/span&gt;"
+</p>
+
+<p>o nosso header vai ficar asssim:</p>
+ <hr>
+
+<pre>
+    <p>
+
+        &lt;h1&gt;O melhor Site do Mundo&lt;/h1&gt;
+  &lt;span id="burguer" class="material-symbols-outlined"
+  &gt;menu&lt;/span&gt;
+
+        &lt;menu id="itens"&gt;
+             
+    &lt;ul&gt;
+              
+
+        &lt;li&gt;&lt;a href="#"&gt;estudos&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;loja&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;novidades&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Junte-se a nós&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul>
+        &lt;/menu>
+    &lt;/header&gt;
+    </p>
+</pre>
+ <p>adicionams dois ids, "burguer" no span e "itens no menu"</p>
+ 
+ <p>Isto pq  vamos lidar com jvScrip ent</p>
+
+ <p>vamos colocar na url do icon um:</p>
+ <pre>
+    <p>onclick="clickMenu()"</p>
+ </pre>
+
+<p>ficando assim</p>
+
+<pre>
+    <p>
+         &lt;h1&gt;O melhor Site do Mundo&lt;/h1&gt;
+  &lt;span id="burguer" class="material-symbols-outlined"
+  onclick="clickMenu()"&gt;menu&lt;/span&gt;
+
+        &lt;menu id="itens"&gt;
+    </p>
+</pre>
+
+<h2>Seguindo</h2>
+
+<p>vamos colocar um "script" no fim do nosso codigo html e vamos programar o nosso JavaScript:</p>
 
 <pre>
     <p>
@@ -740,15 +811,53 @@ Large desktop devices (1025px and up), including desktop monitors and larger lap
     </p>
 </pre>
 
+<p>tradução: function clickMenu{ se os itens que é o nosso menu no style e o displar receber block, vai ser igual a none caso contrario o itens,style,display vai ser igual a block}} </p>
 
-/* o span vem do google mas o onclicl, já é JvScrip
+<p>por fim adicionamos nosso css pros outros disposotivos um:</p>
+
+<pre>
     <p>
-        &lt;span id="burguer" class="material-symbols-outlined"
-          onclick="clickMenu()">menu&lt;/span&gt;
+        @media screen and (min-width: 1024px){
+        span#burguer{
+            display:none
+        }
+
+    menu{
+        display: block;
+    }
+
+    menu>ul>li{
+        display: inline-block;
+        padding: 3px;
+    }
     </p>
+</pre>
+
+<p>que traduzindo abre um media screem que tem como regra a largura minima do disposotivo ser de 10225px e se for o nosso span#burguer que é o menu hamburguer ele não ira aparecer mas o menu vai ficar em block, ent ele aparece e a li que é a nosso menu que foi feito por meio de listas, ele ficar em inline block, oq deixa as linhas retas, uma do lado da outra que é mais estheticamente bonito</p>
 
 
-*/
 
+<hr>
+
+<p>assim configuramos o java pro menu porem tivemos um problema nesse exercicio pq por mais que o menu hamburguer tivesse indo e voltando </p>
+<p>assim que a largura aumenta o menu some, oq nós da um problema</p>
+
+    <p>pra resolver esse problemas nós vamos adicionar me cima do header n body um javaScript</p>
+    <p> onresize="mudouTamanho()"></body></p>
+    <p>e no mesmo script lá em baixo vamos colocar </p>
+
+    function mudouTamanho() {
+    if (window.innerWidth >= 768){
+        itens.style.display = 'block'
+    } else{
+        itens.style.display = 'none'
+    }
+    
+
+}
+<p>traduzinado: function mudouTamanho se a nossa janela tiver largura de 768 o nosso itens.style.display vai ser igual a block caso não ele sera igual a none</p>
+<hr>
+
+<h2>Projeto login</h2>
 </body>
 </html>
