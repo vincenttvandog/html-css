@@ -20,8 +20,9 @@
     text-shadow: 1px 1px 2px rgb(157, 157, 157)
  }
  span#burguer{
+ 
     background-color: rgba(0, 0, 0, 0.373);
-    display: block;
+   display: block;
     color: rgb(255, 255, 255);
     text-align: center;
  }
@@ -40,11 +41,13 @@
     list-style: none;
  }
  menu>ul>li>a{
+   margin: 1px;
     display: block;
     padding: 10px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     background-color: rgb(85, 85, 85);
+    border: 1px 1px solid black;
 
  }
  menu>ul>li>a:hover{

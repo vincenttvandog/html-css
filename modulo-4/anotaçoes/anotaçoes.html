@@ -656,6 +656,99 @@ html,body{
 </pre>
 <hr>
 
+<h2>devices breakpoint</h2>
+No de device brekpoints, a gente fazer modificaçoes no css depenedendo não agr da orientação do dispositivo mas por exemplo, se for ul celular ou um pc, a tela é diferente, precisa de coisas diferentes, como por exemplo vamos ver o mnenu que no mobile normalmente é um menu Hambugur e no pc ele já fica amostra
+
+<p>nós vamos fazer isso com regras do css o "@media"</p>
+
+<p>nosso site vai mudar de acordo com o dispostivo do usuario, se estiver num celular,tablt,pc,tv, nós dev temos que saber modificar.</p>
+
+<p>pra isso nós criamos um css somente para essas modificaçoes</p>
+<p>uma geral  "all" e uma pras medias features <strong>afinal isso ainda é parte do media feature</strong></p>
+ 
+<p>os devices breakpoint atuais <strong>"estou escrevendo isso em 2025"</strong> estão assim:</p>
+
+<p>Mobile devices (320px - 480px), including smartphones in portrait mode 
+Tablet devices (481px - 768px), including tablets in portrait mode and small laptops 
+Small desktop devices (769px - 1024px), including tablets in landscape mode and smaller laptops 
+Large desktop devices (1025px and up), including desktop monitors and larger laptops </p>
+
+<p>
+    numa siução hipotetica nós já criamos um &lt;link rel="stylesheet" href="style.css"&gt; e já configuramos o css como gostariamos
+    nós vamos criar outro link css, para modificar por exemplo o pc, nós vamos mudar o menu
+</p>
+
+<p>vamos colocar um media screen:</p>
+<pre>
+    <p>
+        "@media screen and (min-width: 1024px)"
+         </p>
+</pre>   
+       <br><br>
+        <p>e colocamos a largura do vw do dispostivo que queremos no caso ali tem o pc </p> 
+        <p> por fim fazemos nossa css</p>
+        <p>{
+        span#burguer{
+            display:none
+        }
+
+        menu{
+        display: block;
+    }
+}</p>
+
+<p>ali diz no span com id burguer p display é none e no menu  o dispay é block oq esconde o icon d hamburguer e deix obsoleto o JvScript que colocamos nele e mostra o menu bonitinho</p>
+
+<iframe src="../ex026/mq005/index.html" frameborder="0"></iframe>
+
+<hr>
+
+<p>vou te explicar como fizemos nesse site agorinha</p>
+        
+<img src="Captura de tela 2025-07-06 223235.png">
+
+
+
+
+
+<hr>
+
+<h2>ainda tamo lidando com Media features e isso nós leva a um conceito de Mobile first </h2>
+<h3>que é criar primeiro a versão mobile das coisas</h3>
+
+<p> por isso o GG ta nós ensinando o menu Hamburguer que é compacto e muito se nçao o mais utilizado para dispositivos mobile</p>
+<p>######</p>
+
+<p>nós vamos pegar o icon o menu n google tal quanl as fonts d google</p>
+
+
+
+<h3>Vamos lidar com jvScrip quando formos fazer o menu de alburguer o cod é esse:</h3>
+
+<pre>
+    <p>
+         &lt;script&gt;
+        function clickMenu() {if (itens.style.display == 'block'){
+            itens.style.display ='none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+           
+        
+    &lt;/script&gt;
+    </p>
+</pre>
+
+
+/* o span vem do google mas o onclicl, já é JvScrip
+    <p>
+        &lt;span id="burguer" class="material-symbols-outlined"
+          onclick="clickMenu()">menu&lt;/span&gt;
+    </p>
+
+
+*/
 
 </body>
 </html>
