@@ -63,13 +63,21 @@ parabens, voce chegou até aqui
                 <li> ponto final</li>
                 <p> main-end, é o ponto da esquerda</p>
                 
+    
         </ul>
 
-<h3>Cross-axis</h3>
-<p>eixo transversal que fica no meio do eixo principal </p>
+ <br>
+
+<ul>
+        
+        <li>Cross-axis</li>
+        <p>eixo transversal que fica no meio do eixo principal </p><br>
+</ul>
 
 <p>esse eixo tbm cria dois pontos</p>
+ <br>
  <ul>
+       
         <li>cross-start
         <p>ponto na vertical em cima no sentido do main axis</p>
         </li> 
@@ -84,20 +92,127 @@ parabens, voce chegou até aqui
 
 </ul> 
 
-<h3>
-        quando a configuração do flex direction for <strong>row</strong>:
-</h3> 
+<br>
+
+<ul>
+      
+                <li>quando a configuração do flex direction for <strong>row</strong>:</li>
+        
+
 
 <p>o main axis vai da esquerda pra direita e o cross-axis vai de cima pra baixo </p>
+</ul>
 
-<h3>quando for row-reverse:</h3>
-<p>ele inverte e o main vai da direita para esquerda, e o cross-axis n inverte ele continua de cima pra baixo </p>
+<br>
 
-<h3>quando a configuração for em column</h3>
-<p>o main vai estar verticalmente de cima pra baixo, o cross-axis vai da esquerda pra direita </p>
+<ul>
+        <li>quando for row-reverse:</li>
+        <p>ele inverte e o main vai da direita para esquerda, e o cross-axis n inverte ele continua de cima pra baixo </p>
+</ul>
 
-<h3>no colum-reverse</h3>
-<p>o main axis fica na vertical de baixo pra cima e o cross axis vai ser horizontal da esquerda pra direita</p>
+<br>
+
+<ul>
+        <li>quando a configuração for em column</li>
+        <p>o main vai estar verticalmente de cima pra baixo, o cross-axis vai da esquerda pra direita </p>
+</ul>
+
+<br>
+
+<ul>
+       <li>no colum-reverse</li>
+        <p>o main axis fica na vertical de baixo pra cima e o cross axis vai ser horizontal da esquerda pra direita</p>
+</ul>
+
+<br>
 <hr>
+<h3>flex-wrap</h3>
+<p>o flex-wrap é o enpacotamento ou o encapsulamento  </p>
+<p>o flex-wrap vai configurar o comportamento do conteiener</p>
+<br>
+<p>
+       
+        por <strong>padrão</strong> flex-wrap está como :<strong>nowrap</strong>
+</p>
+<br>
+<p>o encolhimento dos itens dentro do flex-box, vai depender da capacidade de encolhimento dele, depende do conteudo, por exemplo se tivermos palavras, o conteiner vai ficar do tamanaho da palavra com maior cacteres</p>
+<br>
+<p>com nowrap ativado os itens n quebram</p>
+<br><br><br>
+
+
+<h3>wrap</h3>
+<p>agora com o wrap ativado</p>
+<p>quando a configuração do flex-wrap estiver ativada e nós diminuimos o conteiner, quando ele chega no limite, o conteinet vai quebrar no sentido do cross-axis</p>
+
+<h3>wrap-reverse</h3>
+<p>tambem tem o wrap-reverse</p>
+<p>com o wrap-reverse ativado ele vai quebrar no sentido o oposto do cross-axis</p>
+
+<h3>flex-flow</h3>
+<p>o flex flow substitui as declaraçoes, flex-directon e flex-wrap: sendo igual uma short-hand, se voce colocaria por exemplo</p>
+
+        <pre>
+                "flex-direction: row"
+                "flex-wrap: wrap;"
+        </pre>
+
+        <p>colocamos </p>
+
+        <pre>
+                <p>flex-flow row wrap</p>
+        </pre>
+
+<h3>flex:auto é colocado no item</h3>
+
+<h2>justify-content</h2>
+<p>faz o alinhamento com base no main-axis, no main start e main and</p>
+
+<h4>lidando com o o conteiner em row:</h4>
+<ul>flex-start
+        <p> os itemns vao cmeçar no main-start e o espaço em branco vai ficar no main-end </p>
+</ul>
+<br>
+
+<ul>
+        <h3>flex-end</h3>
+        <p>os itens começam no main-and e o o resto até o main-end</p>
+
+</ul>
+<br>
+
+<ul>
+<h3>center</h3>
+<p>os itens ficam centralizados no meio e deixando um espaço igual no main-start e and</p>
+</ul>
+<br>
+
+<ul>
+<h3>space-between</h3>
+<P>ele deixa os os itens no main-start e and e distibuirá os outros itens com um espaço simetrico entre um e outro</P>  
+</ul>
+<br>
+<ul>
+<h3>space-evenly</h3>
+<p>ele distribui mas n gruda os itens no main-start nem no end ele distribui todos com um espaço simetrico</p>
+</ul>
+<br>
+<ul>
+<h3>space-arond</h3> 
+<p>ele vai dividir os nosso conteiner em 3 e vai centralizar os cada item dentro de 1 desses espaços </p>      
+</ul>
+<br>
+<h4>com o conteienr em column:</h4>
+<p>ele faz a mesma coisa dos outros só que agr o main axis esta vertical, pelo conteiner estar em coluna</p>
+
+
+
+
+
+
+
+<hr>
+
+
 </body>
 </html>
