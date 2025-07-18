@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+
+
+
+
+div.conteiner{
+    background-color: brown;
+
+    display: flex;
+    flex-flow: row wrap ;
+    align-items: flex-start;
+    height: 400px;
+
+}
+div.item{
+ background-color: rgb(41, 160, 250);
+ border: 1px solid black;
+ text-align: center;
+ padding: 20px;
+}
+
+Div#i1{
+
+  
+    
+}
+
+
+Div#i2{
+ 
+  align-self: auto; 
+    
+}
+
+
+Div#i3{
+ 
+align-self: flex-end; 
+    
+}
+
+
+Div#i4{
+    
+    
+    
+}
+
+
+Div#i5{
+  
+ align-self: center;       
+    
+}
+
+
+Div#i6{
+        
+
+    
+}
+
+
+Div#i7{
+   
+  align-self: stretch;    
+    
+}
+
+
+
