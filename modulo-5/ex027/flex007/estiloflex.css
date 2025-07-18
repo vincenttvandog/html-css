@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+
+
+
+
+div.conteiner{
+    background-color: brown;
+
+    display: flex;
+    flex-flow: row wrap ;
+
+}
+div.item{
+ background-color: rgb(41, 160, 250);
+ border: 1px solid black;
+ text-align: center;
+ padding: 20px;
+}
+
+Div#i1{
+
+    order: 0;
+    
+}
+
+
+Div#i2{
+ 
+     order: -2;  
+    
+}
+
+
+Div#i3{
+ 
+    order: 4;
+    
+}
+
+
+Div#i4{
+    order: 8; 
+    
+    
+}
+
+
+Div#i5{
+  
+     order: 2;   
+    
+}
+
+
+Div#i6{
+    order: 0;    
+
+    
+}
+
+
+Div#i7{
+   
+    order: -4;    
+    
+}
+
+
+
