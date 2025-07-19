@@ -318,6 +318,49 @@ alinha os items de acordo com o cross-axis
 <p>isso significa que: o shrink por padrão é 1 ent sim ele pode encolher, se <strong>trocarmos o 1 para 0</strong>ca gente indica que não ele n pode encolher</p>
 <p>como o grow vm por padrão 0 significa que ele n pode aumentar</p>
 
+<h2>Como utilizar a propiedade flex</h2>
+<p>Quand vamos moldar nossa interface</p>
+<p>o valor de:</p>
+<ul>
+        <li>basis</li>
+        <li>shrink</li>
+        <li>grow</li>
+
+</ul>
+
+<p>São obrigatoriamennte configurados em todos s items para que a nossa interface funcione de maneira fluida e coerente sem que o conteudo quebre</p>
+
+<p>nós configuramos o basis, colocamos o shrink e o grow com 0</p>
+<p>
+        é recomendavel que substitue-mos essas declaraçoes individuais por uma shot-hand que é o flex <strong>(Coocamos iso no item)</strong>
+</p>
+
+<ol>
+        <p>oq estaria </p>
+
+
+        <li>flex-basis: 150px</li>
+        <li>flex-grow:0</li>
+        <li>flex-shrink:1</li>
+</ol>
+
+<p>vai ficar assim:</p>
+
+<pre>
+        <p>flex: 0 1 150px</p>
+</pre>
+
+<p>nessa ordem:</p>
+
+<ol>
+        <li>flex-grow:0 </li>
+        <li>flex-shrink:1</li>
+        <li>flex-basis: 150px</li>
+</ol>
+
+
+
+
 
 
 </body>
