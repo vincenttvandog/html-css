@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+
+:root{
+
+--cor1--:#B3DAF2 ;
+--cor2--:#8BB4D9 ;
+--cor3--:#386273 ;
+--cor4--:#365B73 ;
+--cor5--:#D9C196 ;
+
+
+
+
+
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:var(--cor2--);
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+background-color:var(--cor3--) ; 
+padding: 20px;
+}
+
+header>h1{
+    color:var(--cor5--);
+    border: 1px dotted black;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+header>p{
+    color: var(--cor5--);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    
+  border: 1px dotted black; 
+}
+nav>a{ color: black;}
+
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+footer{
+
+
+}
