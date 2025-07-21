@@ -11,3 +11,24 @@ Mobile devices
 
 (1025px and up), including desktop monitors and larger laptops
 */
+
+@media screen and (max-width:481px) {
+    
+body{
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
