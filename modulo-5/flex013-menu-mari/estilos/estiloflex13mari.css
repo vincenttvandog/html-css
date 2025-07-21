@@ -26,8 +26,8 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color:var(--cor2--);
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
 }
 
 header{
@@ -58,7 +58,7 @@ header>p{
 nav{
     
   border: 1px dotted black; 
-   flex: 0 1 35px;
+   flex: 0 1 10px;
 }
 header>nav>a{ 
     background-color: var(--cor4--);
@@ -72,9 +72,20 @@ header>nav>a{
 
 main{
     background-color: white;
-    margin: 10px;
     padding: 20px;
+    margin: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
  }   
+
+ main>p{
+    line-height: 1.5em;
+    margin-bottom: 10px;
+
+ }
 
 nav>a:hover{
     background-color: var(--cor5--);
@@ -88,22 +99,28 @@ nav>a:hover{
 footer{
 background-color: var(--cor1--);
 color: black ;
+margin: 20px;
+
+
+display: flex ;
+flex-flow: column wrap
 
 }
 
 h5#sonho{
-    margin-bottom: 150px;
+    margin-bottom: 20px;
     padding: 10px;
+    
 }
 
 h5#copy{
     text-align: right;
-    padding: 10px;
+    padding-right: 30px;
    
 }
 
 p#dev{
     text-align: right;
    
-    padding: 10px;
+    padding-right: 0px 30px 15px 0px;
 }
