@@ -12,11 +12,28 @@ Mobile devices
 (1025px and up), including desktop monitors and larger laptops
 */
 
-@media screen and (max-width:481px) {
+@media screen and (max-width:550px) {
     
 body{
-    background-color: brown;
+    background-color: aliceblue;
 }
+
+header>nav{
+    display: flex;
+    flex-flow: column nowrap ;
+    align-self: center;
+
+}  
+    
+header>nav>a{
+    width: 80vw;
+
+   
+}
+
+
+
+
 
 
 

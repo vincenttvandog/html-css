@@ -32,20 +32,21 @@ body{
 
 header{
 background-color:var(--cor3--) ; 
-padding: 20px;
 color:var(--cor5--);
+padding: 10px;
+
 
 display: flex;
 flex-flow: column wrap;
 justify-content: space-between;
-align-items: start;
+align-items: center;
 
 }
 
 header>h1{
+    font-family: 'Times New Roman', Times, serif;
     
-    border: 1px dotted black;
-     font-family: 'Times New Roman', Times, serif;
+     
 
      flex: 0 0 30px;
      
@@ -57,7 +58,7 @@ header>p{
 }
 
 nav{
-  border: 1px dotted black; 
+  
 
     display: flex;
     flex-flow: row nowrap;
@@ -69,9 +70,11 @@ header>nav>a{
     background-color: var(--cor4--);
     color: black;
     padding: 10px;
-    margin: 5px;
+    margin: 2px;
+    margin-bottom: 0px;
     text-decoration: none;
     text-align: center;
+    
     
 }
 
@@ -130,7 +133,7 @@ h5#sonho{
     
 }
 
-h5#copy{
+h5.copy{
     text-align: right;
     padding:10px
    
