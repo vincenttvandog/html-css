@@ -18,6 +18,65 @@
 }
 
 body{
-   height:98vh ;
-   width: 98vw; 
+  
+
 }
+
+header{
+    background-color: var(--cor4--);
+    padding: 20px;
+}
+
+h1{
+    padding: 15px;
+    line-height: 1.4em;}
+
+    
+
+main{
+margin: 40px;
+
+}
+
+
+main>section.flex-content{
+
+   ####
+
+}
+
+
+main>section>article>div>img{
+    border: 5px solid var(--cor5--);
+}
+
+
+main>section>article>div>iframe{
+    border: 5px solid var(--cor5--);
+}
+
+h1,p#header{
+    color: var(--cor1--);
+    padding: 15px;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+
+
+h2,p{
+    padding: 15px;
+    line-height: 1.4em;
+    
+}
+
+h5{
+    padding: 10px;
+    line-height: 1.4em;
+    text-align: right;
+}
+
+footer{
+    background-color: var(--cor3--);
+}
+
