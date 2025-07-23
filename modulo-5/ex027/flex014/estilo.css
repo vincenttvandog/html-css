@@ -27,40 +27,78 @@ header{
     padding: 20px;
 }
 
-h1{
+
+    h1,p#header{
     padding: 15px;
-    line-height: 1.4em;}
+    line-height: 1.4em;
+    color: var(--cor1--);
+    text-align: center;
+}
 
     
 
 main{
-margin: 40px;
+margin: 20px;
 
 }
 
 
-main>section.flex-content{
+main > section.flex-content {
+    display: flex;
+    flex-flow: column wrap;
+ 
+}
+ 
+main > section.flex-content> article{
 
-   ####
+    
+} 
 
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    
 }
 
 
-main>section>article>div>img{
-    border: 5px solid var(--cor5--);
+main > section > article > div > img{
+    padding: 5px;
+    display: block;
+    margin: auto;
+    
+}
+
+main > section.flex-content > article > div.media{
+    flex: 1 1 300px;
+    
 }
 
 
-main>section>article>div>iframe{
-    border: 5px solid var(--cor5--);
+main > section.flex-content > article  > div.text{
+    flex: 1 1 300px ;
+  
+    
 }
 
-h1,p#header{
-    color: var(--cor1--);
-    padding: 15px;
-    line-height: 1.4em;
-    text-align: center;
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
 }
+
+
+
+main > section > article > div > iframe{
+    padding: 5px;
+    display: block;
+    margin: auto;
+
+    width: 99%;
+}
+
+
+
+
+
 
 
 
@@ -70,13 +108,22 @@ h2,p{
     
 }
 
+
+
+footer{
+    background-color: var(--cor3--);
+    color: var(--cor1--);
+
+}
+
 h5{
     padding: 10px;
     line-height: 1.4em;
     text-align: right;
 }
 
-footer{
-    background-color: var(--cor3--);
+h5#texto{
+    padding: 10px;
+    line-height: 1.4em;
+    text-align: left;
 }
-
