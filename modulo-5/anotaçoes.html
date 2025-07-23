@@ -9,7 +9,11 @@
                         background-color: bisque;
                 }
 
-
+                img{
+                        width: 400px;
+                        height: 250px;
+                        border: 4px solid black;
+                }
         </style>
 </head>
 <body>
@@ -434,6 +438,96 @@ alinha os items de acordo com o cross-axis
 
 
       <h2>Propiedade do Grid layout</h2>
+
+      <p>aqui vamos trabalhar com o exemplo de div's</p>
+
+      <img src="imagens/Captura de tela 2025-07-23 183134.png" alt="">
+
+      <p>nós vams colocar 7 divs com a classe item dentro de um conteiner</p>
+
+      <img src="imagens/Captura de tela 2025-07-23 183642.png" alt="">
+
+<h3>Nós vamos ver nessa aula as carateristicas que podemos configurar do conteiner</h3>
+
+ <p>primeiro de tudo colocamos o</p>
+
+ <pre>
+        <p>
+        display:grid;
+        </p>
+</pre>
+                
+
+<p>logo de cara, não acontece nada porque o padrão é ele ficar com 1 caluna e multiplas linhas</p>
+
+<p>porem continuando configurando</p>
+<p>nós adicionamos o <strong>"grid-templete-columns"</strong> e configuramos ele com " auto auto "</p>
+
+<strong><p>
+        não existe somente a medida auto porem neste exercicio usaremos ele
+</p></strong>
+
+<p>com iss estamos dizendo que o nosso grid tera duas colunas</p>
+
+<img src="imagens/Captura de tela 2025-07-23 185913.png" alt="">
+
+<p>e o codigo fica assim: </p>
+
+<pre>
+        <p>
+                div.conteiner{
+                display: grid;
+                grid-templete-columns:auto auto
+
+                }
+        </p>
+</pre>
+
+<p>se colocarmos "auto auto auto"</p>
+<p>a gente manda o grrid ter 3 colunas</p>
+<br>
+
+<h3>Outra propiedade é o grid-templete-rows</h3>
+
+<p>essa propiedade vai mexer no track row então quando colocamos </p>
+
+<pre>
+        <p>
+                grid:track-tamplete=rows: 100px 100px 100px
+        </p>
+</pre>
+
+<img src="imagens/Captura de tela 2025-07-23 191643.png" alt="">
+
+<h3>temos o grid-gap</h3>
+
+<p>o grid gap determina o espaço entre os items</p>
+
+<img src="imagens/Captura de tela 2025-07-23 195223.png" alt="">
+
+<p>colocando o grid-gap com 20px determinamos que entre cada item havera um espaço com 20px de distancia</p>
+
+o cod fico assim:
+
+<pre>
+        <p>
+                div.conteiner{
+                        display:grid;
+                        grid-templete-columns: auto auto ;
+                        grid-templete-rows: 100px 100px 100px;
+                        grid-gap: 20px;
+                }
+        </p>
+</pre>
+
+
+
+
+
+
+
+        
+
 
 
 
