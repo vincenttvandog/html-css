@@ -505,7 +505,7 @@ alinha os items de acordo com o cross-axis
 
 <img src="imagens/Captura de tela 2025-07-23 195223.png" alt="">
 
-<p>colocando o grid-gap com 20px determinamos que entre cada item havera um espaço com 20px de distancia</p>
+<p>colocando o -gap com 20px determinamos que entre cada item havera um espaço com 20px de distancia</p>
 
 o cod fico assim:
 
@@ -515,13 +515,71 @@ o cod fico assim:
                         display:grid;
                         grid-templete-columns: auto auto ;
                         grid-templete-rows: 100px 100px 100px;
-                        grid-gap: 20px;
+                        gap: 20px;
                 }
         </p>
 </pre>
 
-<hr>
+<h3>alinhamneto do grid</h3>
 
+<p>Nós temos</p>
+
+<ol>
+       
+        <li>aling-items</li>
+        <li>justify-items</li>
+        <p>estes para alinhas os items</p>
+        <li>aling-content</li>
+        <li>justify-content</li>
+        <p>este para alinhar o conteudo</p>
+
+
+</ol>
+<hr>
+<p>sempre que tiver align, o alinhamento é vertical</p>
+
+<p>sempre que tiver justify, o alinhamento é horizontal</p>
+
+<h2>Aling-Item</h2>
+<p>o padrão do Aling-item é o Strech</p>
+
+<pre>
+        <p>
+              Aling-item: Strech  
+        </p>
+</pre>
+
+<p>o strech vai esticar o item até a grid-lines</p>
+
+<img src="imagens/Captura de tela 2025-07-24 153605.png" alt="">
+<hr>
+<pre>
+        <p>
+              Aling-item: start
+        </p>
+</pre>
+
+<p>ele pega os items e gruda no inicio do grid</p>
+
+<img src="imagens/Captura de tela 2025-07-24 155044.png" alt="">
+<hr>
+<pre>
+        <p>Aling-item: Center</p>
+</pre>
+
+<p>ele pega os items e coloca no meio verticlmente da celula</p>
+
+<img src="imagens/Captura de tela 2025-07-24 155104.png" alt="">
+<hr>
+<pre>
+        <p>Aling-item: end</p>
+</pre>
+
+<p>ele alinha no fim da grid-line</p>
+
+<img src="imagens/Captura de tela 2025-07-24 155144.png" alt="">
+ 
+<br><br>
 
 
 
